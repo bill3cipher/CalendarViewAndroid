@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.example.nsc.calendarview.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/btnPreviousMonth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/btn_bg"
+            android:text="Previous"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btnCurrentMonth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/btn_bg"
+            android:text="Current"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btnNextMonth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/btn_bg"
+            android:text="Next"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+
+
+    <com.github.sundeepk.compactcalendarview.CompactCalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        app:compactCalendarCurrentDayBackgroundColor="#ffffff"
+        app:compactCalendarCurrentSelectedDayBackgroundColor="#ffffff"
+        app:compactCalendarCurrentSelectedDayTextColor="#DE1609"
+        app:compactCalendarDisplayOtherMonthDays="true"
+        app:compactCalendarEventIndicatorStyle="small_indicator"
+        app:compactCalendarMultiEventIndicatorColor="#DE1609"
+        app:compactCalendarOtherMonthDaysTextColor="#F4F4F4"
+        app:compactCalendarTextSize="20sp"
+        app:compactCalendarShouldSelectFirstDayOfMonthOnScroll="false"/>
+
+</LinearLayout>
