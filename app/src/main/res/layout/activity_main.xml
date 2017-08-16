@@ -60,7 +60,6 @@
         app:compactCalendarCurrentSelectedDayTextColor="#DE1609"
         app:compactCalendarDisplayOtherMonthDays="true"
         app:compactCalendarEventIndicatorStyle="small_indicator"
-        app:compactCalendarMultiEventIndicatorColor="#DE1609"
         app:compactCalendarOtherMonthDaysTextColor="#F4F4F4"
         app:compactCalendarTextSize="20sp"
         app:compactCalendarShouldSelectFirstDayOfMonthOnScroll="false"/>
